@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background: rebeccapurple;
+}
+
+#header{
+color: white;
+text-align: center;
+position: relative;
+animation-name: header-animation;
+animation-duration: 2s;
+animation-fill-mode:forwards;
+}
+#content{
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    line-height: 1.8;
+    top: 300px;
+    animation-name: content-animation;
+    animation-duration: 2.5s;
+}
+
+#btn{
+    position: relative;
+    top: 325px;
+    left: 48%;
+    width: 20%;
+    transition-property: transform;
+    transition-duration: 2s;
+    opacity: 0;
+    animation-name: btn-animation;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#btn:hover{
+    transform: rotateX(180deg);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    padding: 3%;
+}
+
+@keyframes header-animation {
+    0%  {top:-100px}
+    100% {top:250px}  
+}
+
+@keyframes content-animation {
+    0% {left: -1500px;}
+    100% {left:10%}
+}
+
+@keyframes btn-animation {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

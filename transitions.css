@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+.box{
+    background-color: white;
+    height: 200px;
+    width:300px;
+    position: relative;
+    margin: auto;
+    margin-top: 20%;
+    /* transition-property: background, border-radius; */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+.box:hover{
+    background: rebeccapurple;
+    /* border-radius: 50%; */
+    transform:  rotateX(180deg);
+    /* transform: rotateY(180deg); */
+}
